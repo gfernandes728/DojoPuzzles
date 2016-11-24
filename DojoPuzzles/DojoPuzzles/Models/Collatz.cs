@@ -9,6 +9,10 @@ namespace DojoPuzzles.Models
     {
         public List<CollatzModels> listCollatz = new List<CollatzModels>();
 
+        /// <summary>
+        /// Calcular Collatz
+        /// </summary>
+        /// <param name="collatzModels"></param>
         public void calcular(CollatzModels collatzModels)
         {
             int number = collatzModels.number;
