@@ -1,0 +1,24 @@
+﻿@model IEnumerable<DojoPuzzles.Models.CollatzModels>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.result)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.result)
+        </td>
+    </tr>
+}
+
+</table>
