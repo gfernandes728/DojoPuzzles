@@ -1,0 +1,40 @@
+﻿@model DojoPuzzles.Models.BissextoModels
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h2>Ano Bissexto</h2>
+        <p>
+            A cada 4 anos, a diferença de horas entre o ano solar e o do calendário convencional completa cerca de 24 horas(mais exatamente: 23 horas, 15 minutos e 864 milésimos de segundo). Para compensar essa diferença e evitar um descompasso em relação às estações do ano, insere-se um dia extra no calendário e o mês de fevereiro fica com 29 dias.Essa correção é especialmente importante para atividades atreladas às estações, como a agricultura e até mesmo as festas religiosas.
+            <br />Um determinado ano é bissexto se:
+            <br />O ano for divisível por 4, mas não divisível por 100, exceto se ele for também divisível por 400.
+            <br />Exemplos:
+            <br />São bissextos por exemplo: 1600, 1732, 1888, 1944, 2008
+            <br />Não são bissextos por exemplo: 1742, 1889, 1951, 2011
+            <br />Escreva uma função que determina se um determinado ano informado é bissexto ou não.
+        </p>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.year, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.year, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.year, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@{Html.RenderAction("bissexto", "Bissexto");}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
