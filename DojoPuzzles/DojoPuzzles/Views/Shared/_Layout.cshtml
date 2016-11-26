@@ -20,16 +20,29 @@
                 </button>
                 @Html.ActionLink("Dojo Puzzles", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Analisando a conjectura de Collatz", "CollatzCreate", "Collatz")</li>
-                    <li>@Html.ActionLink("Ano Bissexto", "BissextoCreate", "Bissexto")</li>
-                    <li>@Html.ActionLink("Calculando estatísticas simples", "EstatisticasCreate", "Estatisticas")</li>
-                    <li>@Html.ActionLink("Entradas no Banco", "EntradasBancoCreate", "EntradasBanco")</li>
-                    <li>@Html.ActionLink("Escrevendo no Celular", "EscrevendoCelularCreate", "EscrevendoCelular")</li>
-                    <li>@Html.ActionLink("FizzBuzz", "FizzBuzzCreate", "FizzBuzz")</li>
-                </ul>
-            </div>
+            @if (@ViewBag.Title == "Home Page")
+            {
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" style="margin-top: 7px !important;">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Dojo Puzzles
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>@Html.ActionLink("Analisando a conjectura de Collatz", "CollatzCreate", "Collatz")</li>
+                                    <li>@Html.ActionLink("Ano Bissexto", "BissextoCreate", "Bissexto")</li>
+                                    <li>@Html.ActionLink("Calculando estatísticas simples", "EstatisticasCreate", "Estatisticas")</li>
+                                    <li>@Html.ActionLink("Entradas no Banco", "EntradasBancoCreate", "EntradasBanco")</li>
+                                    <li>@Html.ActionLink("Escrevendo no Celular", "EscrevendoCelularCreate", "EscrevendoCelular")</li>
+                                    <li>@Html.ActionLink("FizzBuzz", "FizzBuzzCreate", "FizzBuzz")</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            }
         </div>
     </div>
     <div class="container body-content">
