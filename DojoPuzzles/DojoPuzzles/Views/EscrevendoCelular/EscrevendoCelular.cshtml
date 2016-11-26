@@ -1,0 +1,24 @@
+﻿@model IEnumerable<DojoPuzzles.Models.EscrevendoCelularModels>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.texto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sequencia)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.texto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sequencia)
+        </td>
+    </tr>
+}
+
+</table>

@@ -199,6 +199,7 @@
     <Compile Include="Controllers\BissextoController.cs" />
     <Compile Include="Controllers\CollatzController.cs" />
     <Compile Include="Controllers\EntradasBancoController.cs" />
+    <Compile Include="Controllers\EscrevendoCelularController.cs" />
     <Compile Include="Controllers\EstatisticasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -212,6 +213,8 @@
     <Compile Include="Models\CollatzModels.cs" />
     <Compile Include="Models\EntradasBanco.cs" />
     <Compile Include="Models\EntradasBancoModels.cs" />
+    <Compile Include="Models\EscrevendoCelular.cs" />
+    <Compile Include="Models\EscrevendoCelularModels.cs" />
     <Compile Include="Models\Estatisticas.cs" />
     <Compile Include="Models\EstatisticasModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -285,6 +288,8 @@
     <Content Include="Views\Estatisticas\Estatisticas.cshtml" />
     <Content Include="Views\EntradasBanco\EntradasBanco.cshtml" />
     <Content Include="Views\EntradasBanco\EntradasBancoCreate.cshtml" />
+    <Content Include="Views\EscrevendoCelular\EscrevendoCelular.cshtml" />
+    <Content Include="Views\EscrevendoCelular\EscrevendoCelularCreate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,48 @@
+﻿@model DojoPuzzles.Models.EscrevendoCelularModels
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h2>Escrevendo no Celular</h2>
+        <p>
+            Um dos serviços mais utilizados pelos usuários de aparelhos celulares são os SMS (Short Message Service), que permite o envio de mensagens curtas (até 255 caracteres em redes GSM e 160 caracteres em redes CDMA).
+            <br /><br />Para digitar uma mensagem em um aparelho que não possui um teclado QWERTY embutido é necessário fazer algumas combinações das 10 teclas numéricas do aparelho para conseguir digitar. Cada número é associado a um conjunto de letras como a seguir:
+            <br /><br />Letras  ->  Número
+            <br />ABC     ->  2
+            <br />DEF     ->  3
+            <br />GHI     ->  4
+            <br />JKL     ->  5
+            <br />MNO     ->  6
+            <br />PQRS    ->  7
+            <br />TUV     ->  8
+            <br />WXYZ    ->  9
+            <br />Espaço  ->  0
+            <br /><br />Desenvolva um programa que, dada uma mensagem de texto limitada a 255 caracteres, retorne a seqüência de números que precisa ser digitada. Uma pausa, para ser possível obter duas letras referenciadas pelo mesmo número, deve ser indicada como _.
+            <br /><br />Por exemplo, para digitar "SEMPRE ACESSO O DOJOPUZZLES", você precisa digitar:
+            <br />77773367_7773302_222337777_777766606660366656667889999_9999555337777
+        </p>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.texto, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.texto, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.texto, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@{Html.RenderAction("escrevendoCelular", "EscrevendoCelular");}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
