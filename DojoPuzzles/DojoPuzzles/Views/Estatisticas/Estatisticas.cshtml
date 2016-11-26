@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DojoPuzzles.Models.EstatisticasModels>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.sequencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.minimo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.maximo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.media)
+        </th>
+      </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.sequencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.minimo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.maximo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.media)
+        </td>
+    </tr>
+}
+
+</table>

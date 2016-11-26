@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BissextoController.cs" />
     <Compile Include="Controllers\CollatzController.cs" />
+    <Compile Include="Controllers\EstatisticasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -208,6 +209,8 @@
     <Compile Include="Models\BissextoModels.cs" />
     <Compile Include="Models\Collatz.cs" />
     <Compile Include="Models\CollatzModels.cs" />
+    <Compile Include="Models\Estatisticas.cs" />
+    <Compile Include="Models\EstatisticasModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -275,6 +278,8 @@
     <Content Include="Views\Collatz\CollatzCreate.cshtml" />
     <Content Include="Views\Bissexto\Bissexto.cshtml" />
     <Content Include="Views\Bissexto\BissextoCreate.cshtml" />
+    <Content Include="Views\Estatisticas\EstatisticasCreate.cshtml" />
+    <Content Include="Views\Estatisticas\Estatisticas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
