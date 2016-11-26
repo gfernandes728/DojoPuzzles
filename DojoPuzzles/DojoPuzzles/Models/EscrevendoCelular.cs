@@ -36,15 +36,9 @@ namespace DojoPuzzles.Models
         /// <param name="escrevendoCelularModels"></param>
         public void calcular(EscrevendoCelularModels escrevendoCelularModels)
         {
-            ArrayList chars = new ArrayList();
-            chars.Add("ABC");       // 2 -> ABC     (0)
-            chars.Add("DEF");       // 3 -> DEF     (1)
-            chars.Add("GHI");       // 4 -> GHI     (2)
-            chars.Add("JKL");       // 5 -> JKL     (3)
-            chars.Add("MNO");       // 6 -> MNO     (4)
-            chars.Add("PQRS");      // 7 -> PQRS    (5)
-            chars.Add("TUV");       // 8 -> TUV     (6)
-            chars.Add("WXYZ");      // 9 -> WZYZ    (7)
+            Util _util = new Util();
+
+            ArrayList chars = _util.getCharsTelefone();
             chars.Add(" ");         // 0 -> Espaço  (8)
             chars.Add("123456790"); // n -> Números (9)
 

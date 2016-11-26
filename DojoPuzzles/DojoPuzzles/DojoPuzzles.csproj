@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BissextoController.cs" />
     <Compile Include="Controllers\CollatzController.cs" />
+    <Compile Include="Controllers\EncontreTelefoneController.cs" />
     <Compile Include="Controllers\EntradasBancoController.cs" />
     <Compile Include="Controllers\EscrevendoCelularController.cs" />
     <Compile Include="Controllers\EstatisticasController.cs" />
@@ -212,6 +213,8 @@
     <Compile Include="Models\BissextoModels.cs" />
     <Compile Include="Models\Collatz.cs" />
     <Compile Include="Models\CollatzModels.cs" />
+    <Compile Include="Models\EncontreTelefone.cs" />
+    <Compile Include="Models\EncontreTelefoneModels.cs" />
     <Compile Include="Models\EntradasBanco.cs" />
     <Compile Include="Models\EntradasBancoModels.cs" />
     <Compile Include="Models\EscrevendoCelular.cs" />
@@ -222,6 +225,7 @@
     <Compile Include="Models\FizzBuzzModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -295,6 +299,8 @@
     <Content Include="Views\EscrevendoCelular\EscrevendoCelularCreate.cshtml" />
     <Content Include="Views\FizzBuzz\FizzBuzz.cshtml" />
     <Content Include="Views\FizzBuzz\FizzBuzzCreate.cshtml" />
+    <Content Include="Views\EncontreTelefone\EncontreTelefone.cshtml" />
+    <Content Include="Views\EncontreTelefone\EncontreTelefoneCreate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
