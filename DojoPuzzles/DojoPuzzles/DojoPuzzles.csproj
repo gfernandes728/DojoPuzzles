@@ -201,6 +201,7 @@
     <Compile Include="Controllers\EntradasBancoController.cs" />
     <Compile Include="Controllers\EscrevendoCelularController.cs" />
     <Compile Include="Controllers\EstatisticasController.cs" />
+    <Compile Include="Controllers\FizzBuzzController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -217,6 +218,8 @@
     <Compile Include="Models\EscrevendoCelularModels.cs" />
     <Compile Include="Models\Estatisticas.cs" />
     <Compile Include="Models\EstatisticasModels.cs" />
+    <Compile Include="Models\FizzBuzz.cs" />
+    <Compile Include="Models\FizzBuzzModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -290,6 +293,8 @@
     <Content Include="Views\EntradasBanco\EntradasBancoCreate.cshtml" />
     <Content Include="Views\EscrevendoCelular\EscrevendoCelular.cshtml" />
     <Content Include="Views\EscrevendoCelular\EscrevendoCelularCreate.cshtml" />
+    <Content Include="Views\FizzBuzz\FizzBuzz.cshtml" />
+    <Content Include="Views\FizzBuzz\FizzBuzzCreate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
