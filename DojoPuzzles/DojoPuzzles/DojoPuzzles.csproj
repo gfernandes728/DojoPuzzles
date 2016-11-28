@@ -205,6 +205,7 @@
     <Compile Include="Controllers\FizzBuzzController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TrocoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -225,6 +226,8 @@
     <Compile Include="Models\FizzBuzzModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Troco.cs" />
+    <Compile Include="Models\TrocoModels.cs" />
     <Compile Include="Models\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -301,6 +304,8 @@
     <Content Include="Views\FizzBuzz\FizzBuzzCreate.cshtml" />
     <Content Include="Views\EncontreTelefone\EncontreTelefone.cshtml" />
     <Content Include="Views\EncontreTelefone\EncontreTelefoneCreate.cshtml" />
+    <Content Include="Views\Troco\TrocoCreate.cshtml" />
+    <Content Include="Views\Troco\Troco.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

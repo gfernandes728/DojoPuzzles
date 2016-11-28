@@ -1,0 +1,38 @@
+﻿@model DojoPuzzles.Models.TrocoModels
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h2>Troco</h2>
+        <p>
+            Funcionários de empresas comerciais que trabalham como caixa tem uma grande responsabilidade em suas mãos.A maior parte do tempo de seu expediente de trabalho é gasto recebendo valores de clientes e, em alguns casos, fornecendo troco.
+            <br /><br />Seu desafio é fazer um programa que leia o valor total a ser pago e o valor efetivamente pago, informando o menor número de cédulas e moedas que devem ser fornecidas como troco.
+            <br /><br />Deve-se considerar que há:
+            <br />+ cédulas de R$100,00, R$50,00, R$10,00, R$5,00 e R$1,00;
+            <br />+ moedas de R$0,50, R$0,10, R$0,05 e R$0,01.
+        </p>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.money, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.money, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.money, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+@{Html.RenderAction("troco", "Troco");}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
